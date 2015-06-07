@@ -153,6 +153,10 @@ Error message and password prompt
 
 <li>$:/core/ui/ViewTemplate/title</li>
 
+<li>$:/DefaultTiddlers</li>
+
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/language</li>
@@ -295,7 +299,9 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla/options/sidebarlayout</li>
 
-<li>TableOfContents</li>
+<li>Contents</li>
+
+<li>Home</li>
 
 </ul>
 </p>
@@ -6093,6 +6099,20 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 &lt;/$reveal&gt;
 &lt;/div&gt;</pre>
 </div>
+<div created="20150607024936918" modified="20150607024940571" title="$:/DefaultTiddlers">
+<pre>Home
+</pre>
+</div>
+<div plugin-type="import" status="pending" title="$:/Import" type="application/json">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;Untitled&quot;: {
+            &quot;text&quot;: &quot;TableOfContents&quot;,
+            &quot;title&quot;: &quot;Untitled&quot;
+        }
+    }
+}</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -10893,13 +10913,13 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 <div modified="20150606175124162" title="$:/state/tab/moresidebar-401116514">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div modified="20150606181311590" title="$:/state/tab/sidebar--1835078512">
-<pre>TableOfContents</pre>
+<div modified="20150607024739022" title="$:/state/tab/sidebar--1835078512">
+<pre>Contents</pre>
 </div>
 <div modified="20150606180944594" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div list="Home" title="$:/StoryList">
 <pre></pre>
 </div>
 <div modified="20150606181257048" title="$:/temp/advancedsearch">
@@ -10919,7 +10939,7 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
     }
 }</pre>
 </div>
-<div created="20150606174429466" modified="20150606174646599" title="$:/temp/NewTagName">
+<div created="20150606174429466" modified="20150607024851780" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Zdeněk Jašek" core-version="&gt;=5.0.0" created="20150606181149775" dependents="" description="Česky (Czech Republic)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22900%22%20height%3D%22600%22%3E%0A%09%3Crect%20width%3D%22900%22%20height%3D%22600%22%20fill%3D%22%23d7141a%22%2F%3E%0A%09%3Crect%20width%3D%22900%22%20height%3D%22300%22%20fill%3D%22%23fff%22%2F%3E%0A%09%3Cpath%20d%3D%22M%20450%2C300%200%2C0%20V%20600%20z%22%20fill%3D%22%2311457e%22%2F%3E%0A%3C%2Fsvg%3E%0A" modified="20150606181149775" name="cs-CZ" original-plugin-type="language" original-tags="" original-title="$:/languages/cs-CZ" original-type="application/json" server-url="http://tiddlywiki.com/library/v5.1.8/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/http://tiddlywiki.com/library/v5.1.8/index.html/$:/languages/cs-CZ" type="text/vnd.tiddlywiki" version="5.1.8">
@@ -11144,7 +11164,7 @@ At this point it is largely for experimentation by @zooko.
 <div created="20150606181207291" modified="20150606181208616" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>ja</pre>
 </div>
-<div created="20150606174709744" modified="20150606180707801" title="$:/temp/search">
+<div created="20150606174709744" modified="20150607024933949" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20150606181149664" modified="20150606181149664" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/http://tiddlywiki.com/library/v5.1.8/index.html" url="http://tiddlywiki.com/library/v5.1.8/index.html">
@@ -11258,10 +11278,13 @@ At this point it is largely for experimentation by @zooko.
 <div modified="20150606180604610" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fluid-fixed</pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20150606174157462" list-before="$:/core/ui/SideBar/Open" modified="20150606174440673" tags="$:/tags/SideBar" title="TableOfContents">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20150606174157462" list="Home" list-before="$:/core/ui/SideBar/Open" modified="20150607024927481" tags="$:/tags/SideBar" title="Contents">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
+&lt;&lt;toc-selective-expandable 'Contents'&gt;&gt;
 &lt;/div&gt;</pre>
+</div>
+<div caption="首頁" created="20150607024752342" modified="20150607024903377" tags="Contents" title="Home">
+<pre></pre>
 </div>
 
 </div>
